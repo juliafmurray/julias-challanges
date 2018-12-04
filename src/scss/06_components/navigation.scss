@@ -1,0 +1,13 @@
+.c-sm-nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: $padding-small;
+  height: 60px;
+}
+
+
+.c-sm-nav__title {
+  padding-left: $padding-small;
+}

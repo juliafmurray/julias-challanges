@@ -1,0 +1,95 @@
+// Colors
+
+
+$color-primary: #07154C;
+$color-secondary: #AF2551;
+$color-white: #FFF;
+$color-accent: #EFC138;
+$color-bg-accent: #FFE4DC;
+$color-bg-primary: #FFFEFA;
+$color-bg-secondary: #FFF4F0;
+$color-green: #087169;
+$color-border: #07154C;
+
+// Fonts
+
+$font-family-primary: 'bookmania', serif;
+$font-family-secondary: 'work-sans', sans-serif;
+$font-family-monospace: monospace;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-x-bold: 900;
+
+// Font Size
+
+$font-size-heading-x-large: 3.5rem;
+$font-size-heading-large: 3rem;
+$font-size-heading-medium: 2.3rem;
+$font-size-heading-small: 1.9rem;
+
+$font-size-text-large: 1.5rem;
+$font-size-text-medium: 1.3rem;
+$font-size-text-small: 1rem;
+
+// Line Height
+
+$line-height-heading: 1.25;
+$line-height-text: 1.25;
+$line-height-tall: 2.2;
+
+// Kerning
+
+$letter-spacing-narrow: -10px;
+$letter-spacing-wide: 3px;
+
+// Spacing
+
+$spacing-x-small: .5rem;
+$spacing-xx-small: .25rem;
+$spacing-xxx-small: .125rem;
+$spacing-small: .75rem;
+$spacing-medium: 1rem;
+$spacing-large: 1.5rem;
+$spacing-x-large: 2rem;
+$spacing-xx-large: 3rem;
+$spacing-xxx-large: 4rem;
+
+// Borders
+
+$border-width-thin: 1px;
+$border-width-thick: 2px;
+
+// Positioning
+$positioning-centered: 0 auto;
+
+// padding
+$padding-medium: 1rem;
+$padding-small: .5rem;
+
+// Radius
+
+$border-radius-circle: 50%;
+$border-radius-small: 2px;
+$border-radius-medium: 3px;
+$border-radius-large: 5px;
+$border-radius-pill: 240px;
+
+
+// Time
+
+$duration-quickly: .1s;
+$duration-immediately: .05s;
+$duration-toast-medium: 9.6s;
+$duration-slowly: .4s;
+$duration-toast-short: 4.8s;
+$duration-paused: 3.2s;
+$duration-promptly: .2s;
+$duration-slide: .25s;
+
+// Z-index
+
+$z-index-default: 1;
+$z-index-modal: 8000;
+$z-index-spinner: 9000;
+$z-index-toast: 10000;

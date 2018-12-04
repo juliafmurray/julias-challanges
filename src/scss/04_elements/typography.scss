@@ -1,0 +1,43 @@
+
+
+html {
+  font-family: $font-family-secondary;
+  line-height: $line-height-text;
+}
+
+h1 {
+  color: $color-accent;
+  font-family: $font-family-primary;
+  font-size: $font-size-heading-medium;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    font-size: $font-size-heading-x-large;
+  }
+}
+
+h2 {
+  color: $color-primary;
+  font-family: $font-family-primary;
+  font-size: $font-size-heading-medium;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-text;
+}
+
+h3 {
+  font-size: $font-size-heading-medium;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+h4 {
+  font-size: $font-size-heading-small;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+p {
+  color: $color-primary;
+  font-size: $font-size-text-medium;
+}
