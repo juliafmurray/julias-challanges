@@ -2,12 +2,17 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  height: 60px;
   justify-content: space-between;
   padding-top: $padding-small;
-  height: 60px;
 }
-
 
 .c-sm-nav__title {
   padding-left: $padding-small;
+}
+
+.c-sm-nav__menu {
+  @media (min-width:#{lower-bound($large-range)}) {
+    display: none;
+  }
 }
