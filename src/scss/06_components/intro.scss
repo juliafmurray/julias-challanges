@@ -5,6 +5,10 @@
 
 .c-intro__heading {
   padding-bottom: $padding-large;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    font-size: $font-size-heading-x-large;
+  }
 }
 .c-intro__text {
   color: $color-white;
