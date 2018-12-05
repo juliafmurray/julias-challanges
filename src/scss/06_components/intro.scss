@@ -1,15 +1,27 @@
 .c-intro__home {
   background-color: $color-primary;
-  border: 1px solid purple;
 }
 
-.c-intro__heading {
+.c-intro__home--heading {
   padding-bottom: $padding-large;
 
   @media (min-width:#{lower-bound($large-range)}) {
     font-size: $font-size-heading-x-large;
   }
 }
-.c-intro__text {
+
+.c-intro__home--text {
   color: $color-white;
+}
+
+.c-intro__approach {
+  background-color: $color-green;
+}
+
+.c-intro__approach--heading {
+  border: 1px solid red;
+}
+
+.c-intro__approach--text {
+  border: 1px solid red;
 }

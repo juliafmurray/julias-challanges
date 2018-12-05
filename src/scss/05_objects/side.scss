@@ -1,24 +1,26 @@
 .o-side {
   display: flex;
-  height: 450px;
+  flex-wrap: wrap;
+  border: 2px solid black;
 }
 
 .o-side__left {
-  border: 1px solid red;
+  border: 1px solid blue;
+  padding: $padding-xx-large $padding-medium;
+  text-align: right;
+
+  @media (max-width:#{upper-bound($small-range)}) {
+    width: 100%;
+  }
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 30%;
   }
-
 }
 
 .o-side__right {
-  border: 1px solid red;
-  flex-direction: column;
-  padding: $padding-xx-large $padding-medium;
+  padding: $padding-xx-large $padding-medium $padding-xx-large 0;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 60%;
   }
-
-
 }
