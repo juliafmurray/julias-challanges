@@ -1,2 +1,14 @@
 .o-side {
+  display: flex;
+}
+
+.o-side__left {
+  border: 1px solid red;
+}
+
+.o-side__right {
+  border: 1px solid red;
+  flex-direction: column;
+  padding: $padding-xx-large $padding-medium;
+
 }

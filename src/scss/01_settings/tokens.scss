@@ -26,7 +26,7 @@ $font-weight-x-bold: 900;
 $font-size-heading-x-large: 3.5rem;
 $font-size-heading-large: 3rem;
 $font-size-heading-medium: 2.3rem;
-$font-size-heading-small: 1.9rem;
+$font-size-heading-small: 1.875rem;
 
 $font-size-text-large: 1.5rem;
 $font-size-text-medium: 1.3rem;
@@ -61,11 +61,17 @@ $border-width-thin: 1px;
 $border-width-thick: 2px;
 
 // Positioning
+
 $positioning-centered: 0 auto;
 
 // padding
-$padding-medium: 1rem;
+
 $padding-small: .5rem;
+$padding-medium: 1rem;
+$padding-large: 1.5rem;
+$padding-x-large: 2rem;
+$padding-xx-large: 3rem;
+
 
 // Radius
 
