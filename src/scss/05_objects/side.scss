@@ -1,23 +1,24 @@
 .o-side {
+  //border: 2px solid red;
   display: flex;
-  flex-wrap: wrap;
-  border: 2px solid black;
+  flex-direction: column;
 }
 
-.o-side__left {
-  border: 1px solid blue;
-  padding: $padding-xx-large $padding-medium;
+.o-side__left-top {
+  //border: 1px solid blue;
   text-align: right;
 
-  @media (max-width:#{upper-bound($small-range)}) {
-    width: 100%;
-  }
+
   @media (min-width:#{lower-bound($medium-range)}) {
-    width: 30%;
+    justify-content: flex-end;
+    padding: $padding-xx-large $padding-medium;
+    width: 25%;
   }
 }
 
-.o-side__right {
+.o-side__right-bottom {
+  //border: 1px solid red;
+  flex-direction: column;
   padding: $padding-xx-large $padding-medium $padding-xx-large 0;
 
   @media (min-width:#{lower-bound($medium-range)}) {

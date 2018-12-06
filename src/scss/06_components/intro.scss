@@ -1,27 +1,59 @@
-.c-intro__home {
-  background-color: $color-primary;
-}
+.c-intro__home,
+.c-intro__approach,
+.c-intro__people {
+  flex-direction: column;
+  height: 515px;
+  padding: $padding-small $padding-large;
 
-.c-intro__home--heading {
-  padding-bottom: $padding-large;
-
-  @media (min-width:#{lower-bound($large-range)}) {
-    font-size: $font-size-heading-x-large;
+  @media (min-width:#{lower-bound($medium-range)}) {
+    flex-direction: row;
   }
 }
 
-.c-intro__home--text {
-  color: $color-white;
+.c-intro__home {
+  background-color: $color-primary;
+  border: 3px solid green;
 }
 
-.c-intro__approach {
+.c-intro__home--heading {
+  @media (min-width:#{lower-bound($large-range)}) {
+    font-size: $font-size-heading-xx-large;
+    width: $width-large;
+  }
+}
+
+.c-intro__home--text,
+.c-intro__approach--text,
+.c-intro__people--text {
+  color: $color-white;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    width: $width-large;
+  }
+}
+
+.c-intro__people {
   background-color: $color-green;
 }
 
-.c-intro__approach--heading {
-  border: 1px solid red;
+.c-intro__people--heading {
+  padding-top: $padding-x-large;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    padding-top: 0;
+  }
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    font-size: $font-size-heading-xx-large;
+  }
 }
 
-.c-intro__approach--text {
-  border: 1px solid red;
+.c-intro__people--text {
+  font-weight: $font-weight-regular;
+  padding-left: $padding-large;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    font-size: $font-size-heading-medium;
+  }
+
 }

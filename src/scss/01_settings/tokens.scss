@@ -23,9 +23,10 @@ $font-weight-x-bold: 900;
 
 // Font Size
 
+$font-size-heading-xx-large: 5rem;
 $font-size-heading-x-large: 3.5rem;
 $font-size-heading-large: 3rem;
-$font-size-heading-medium: 2.6rem;
+$font-size-heading-medium: 2.4rem;
 $font-size-heading-small: 1.875rem;
 
 $font-size-text-large: 1.5rem;
@@ -36,7 +37,7 @@ $font-size-text-small: 1rem;
 
 $line-height-heading: 1.25;
 $line-height-text: 1.25;
-$line-height-tall: 2.2;
+$line-height-tall: 1.75;
 
 // Kerning
 
@@ -93,6 +94,10 @@ $duration-toast-short: 4.8s;
 $duration-paused: 3.2s;
 $duration-promptly: .2s;
 $duration-slide: .25s;
+
+// width
+
+$width-large: 1000px;
 
 // Z-index
 
