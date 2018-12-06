@@ -22,9 +22,9 @@
   background-color: $color-secondary;
 }
 
-.c-intro__home--text,
-.c-intro__approach--text,
-.c-intro__people--text {
+.c-intro__home--secondary,
+.c-intro__approach--label,
+.c-intro__people--label {
   color: $color-white;
   font-weight: $font-weight-regular;
 
@@ -39,7 +39,7 @@
   }
 }
 
-.c-intro__people--heading {
+.c-intro__people--title {
   font-size: $font-size-heading-small;
   letter-spacing: $spacing-xxx-small;
 

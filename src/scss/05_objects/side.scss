@@ -18,6 +18,7 @@
   padding: $padding-xx-large $padding-medium $padding-xx-large 0;
 
   @media (min-width:#{lower-bound($medium-range)}) {
-    width: 60%;
+    width: 500px;
   }
+
 }
