@@ -1,0 +1,23 @@
+.o-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.o-side__left-top {
+  text-align: right;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    justify-content: flex-end;
+    padding: $padding-xx-large $padding-medium;
+    width: 25%;
+  }
+}
+
+.o-side__right-bottom {
+  flex-direction: column;
+  padding: $padding-xx-large $padding-medium $padding-xx-large 0;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 60%;
+  }
+}

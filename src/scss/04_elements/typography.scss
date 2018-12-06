@@ -1,5 +1,4 @@
 
-
 html {
   font-family: $font-family-secondary;
   line-height: $line-height-text;
@@ -13,7 +12,7 @@ h1 {
   line-height: $line-height-heading;
 
   @media (min-width:#{lower-bound($medium-range)}) {
-    font-size: $font-size-heading-x-large;
+    font-size: $font-size-heading-large;
   }
 }
 
@@ -32,9 +31,16 @@ h3 {
 }
 
 h4 {
+  font-family: $font-family-secondary;
   font-size: $font-size-heading-small;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-heading;
+  font-weight: $font-weight-medium;
+}
+
+h5 {
+  color: $color-primary;
+  font-family: $font-family-secondary;
+  font-size: $font-size-text-large;
+  font-weight: $font-weight-regular;
 }
 
 p {

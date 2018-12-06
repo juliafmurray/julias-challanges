@@ -23,10 +23,11 @@ $font-weight-x-bold: 900;
 
 // Font Size
 
+$font-size-heading-xx-large: 5rem;
 $font-size-heading-x-large: 3.5rem;
-$font-size-heading-large: 3rem;
-$font-size-heading-medium: 2.3rem;
-$font-size-heading-small: 1.9rem;
+$font-size-heading-large: 2.9rem;
+$font-size-heading-medium: 2.4rem;
+$font-size-heading-small: 2rem;
 
 $font-size-text-large: 1.5rem;
 $font-size-text-medium: 1.3rem;
@@ -36,7 +37,7 @@ $font-size-text-small: 1rem;
 
 $line-height-heading: 1.25;
 $line-height-text: 1.25;
-$line-height-tall: 2.2;
+$line-height-tall: 1.75;
 
 // Kerning
 
@@ -47,7 +48,7 @@ $letter-spacing-wide: 3px;
 
 $spacing-x-small: .5rem;
 $spacing-xx-small: .25rem;
-$spacing-xxx-small: .125rem;
+$spacing-xxx-small: .02rem;
 $spacing-small: .75rem;
 $spacing-medium: 1rem;
 $spacing-large: 1.5rem;
@@ -61,11 +62,18 @@ $border-width-thin: 1px;
 $border-width-thick: 2px;
 
 // Positioning
+
 $positioning-centered: 0 auto;
 
 // padding
-$padding-medium: 1rem;
+
 $padding-small: .5rem;
+$padding-medium: 1rem;
+$padding-large: 1.5rem;
+$padding-x-large: 2rem;
+$padding-xx-large: 3rem;
+$padding-xxx-large: 4rem;
+
 
 // Radius
 
@@ -86,6 +94,10 @@ $duration-toast-short: 4.8s;
 $duration-paused: 3.2s;
 $duration-promptly: .2s;
 $duration-slide: .25s;
+
+// width
+
+$width-large: 1000px;
 
 // Z-index
 

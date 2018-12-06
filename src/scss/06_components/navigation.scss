@@ -1,4 +1,4 @@
-.c-sm-nav {
+.c-nav {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -7,12 +7,25 @@
   padding-top: $padding-small;
 }
 
-.c-sm-nav__title {
+.c-nav__title {
   padding-left: $padding-small;
 }
 
-.c-sm-nav__menu {
-  @media (min-width:#{lower-bound($large-range)}) {
+.c-nav__menu {
+  @media (min-width:#{lower-bound($medium-range)}) {
     display: none;
   }
+}
+
+.c-nav__link {
+  align-self: flex-start;
+  display: none;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    display: flex;
+  }
+}
+
+.c-nav__link--item {
+  padding-right: $padding-medium;
 }
