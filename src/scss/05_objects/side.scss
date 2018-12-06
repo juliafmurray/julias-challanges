@@ -1,13 +1,10 @@
 .o-side {
-  //border: 2px solid red;
   display: flex;
   flex-direction: column;
 }
 
 .o-side__left-top {
-  //border: 1px solid blue;
   text-align: right;
-
 
   @media (min-width:#{lower-bound($medium-range)}) {
     justify-content: flex-end;
@@ -17,7 +14,6 @@
 }
 
 .o-side__right-bottom {
-  //border: 1px solid red;
   flex-direction: column;
   padding: $padding-xx-large $padding-medium $padding-xx-large 0;
 

@@ -3,7 +3,7 @@
 .c-intro__people {
   flex-direction: column;
   height: 515px;
-  padding: $padding-small $padding-large;
+  padding: $padding-large $padding-large;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-direction: row;
@@ -12,48 +12,43 @@
 
 .c-intro__home {
   background-color: $color-primary;
-  border: 3px solid green;
-}
-
-.c-intro__home--heading {
-  @media (min-width:#{lower-bound($large-range)}) {
-    font-size: $font-size-heading-xx-large;
-    width: $width-large;
-  }
-}
-
-.c-intro__home--text,
-.c-intro__approach--text,
-.c-intro__people--text {
-  color: $color-white;
-
-  @media (min-width:#{lower-bound($large-range)}) {
-    width: $width-large;
-  }
 }
 
 .c-intro__people {
   background-color: $color-green;
 }
 
-.c-intro__people--heading {
-  padding-top: $padding-x-large;
+.c-intro__approach {
+  background-color: $color-secondary;
+}
+
+.c-intro__home--text,
+.c-intro__approach--text,
+.c-intro__people--text {
+  color: $color-white;
+  font-weight: $font-weight-regular;
+
 
   @media (min-width:#{lower-bound($medium-range)}) {
     padding-top: 0;
   }
 
   @media (min-width:#{lower-bound($large-range)}) {
-    font-size: $font-size-heading-xx-large;
+    width: $width-large;
+    padding-right: $padding-xx-large;
   }
 }
 
-.c-intro__people--text {
-  font-weight: $font-weight-regular;
-  padding-left: $padding-large;
+.c-intro__people--heading {
+  font-size: $font-size-heading-small;
+  letter-spacing: $spacing-xxx-small;
 
   @media (min-width:#{lower-bound($medium-range)}) {
+    padding-top: 0;
     font-size: $font-size-heading-medium;
   }
 
+  @media (min-width:#{lower-bound($large-range)}) {
+    font-size: $font-size-heading-large;
+  }
 }
