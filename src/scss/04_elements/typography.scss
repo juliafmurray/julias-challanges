@@ -21,7 +21,7 @@ h2 {
   font-family: $font-family-primary;
   font-size: $font-size-heading-medium;
   font-weight: $font-weight-regular;
-  line-height: $line-height-text;
+  line-height: $line-height-heading;
 }
 
 h3 {
@@ -46,4 +46,5 @@ h5 {
 p {
   color: $color-primary;
   font-size: $font-size-text-medium;
+  line-height: $line-height-tall;
 }

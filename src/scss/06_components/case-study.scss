@@ -1,27 +1,31 @@
 .c-main {
   flex-flow: column;
-  border: 2px solid orange;
-  height: 375px;
+  //border: 2px solid orange;
   padding: $padding-large;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-flow: row;
     padding-top: $padding-xxxx-large;
   }
-
 }
 
 .c-main__label {
   font-weight: $font-weight-bold;
+  //border: 2px solid $color-secondary;
 }
 
 .c-main__title {
   color: $color-secondary;
   font-weight: $font-weight-bold;
+  //border: 2px solid $color-secondary;
 }
 
 .c-button__subtitle {
   background-color: $color-primary;
   color: $color-white;
+}
 
+.c-main__subtitle {
+  padding-bottom: $padding-xx-large;
+  //border: 2px solid $color-green;
 }
