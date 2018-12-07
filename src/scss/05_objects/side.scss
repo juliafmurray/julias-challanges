@@ -9,19 +9,19 @@
   @media (min-width:#{lower-bound($medium-range)}) {
     text-align: right;
     justify-content: flex-end;
-    padding: $padding-xxx-large $padding-medium;
     width: 25%;
-    border: 1px solid purple;
+    //border: 2px solid purple;
+    padding: $padding-xxx-large;
   }
 }
 
 .o-side__right-bottom {
-  border: 1px solid green;
+  //border: 1px solid green;
   flex-flow: column;
-  padding: $padding-xxx-large $padding-medium $padding-x-large 0;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 70%;
+    padding: $padding-xxx-large $padding-medium 0;
   }
 
 }

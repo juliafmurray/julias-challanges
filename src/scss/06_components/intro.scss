@@ -22,22 +22,17 @@
   background-color: $color-secondary;
 }
 
-.c-intro__home--secondary,
+
 .c-intro__approach--label,
 .c-intro__people--label {
+  @include label-primary;
   color: $color-white;
-  font-weight: $font-weight-regular;
-
-
-  @media (min-width:#{lower-bound($medium-range)}) {
-    padding-top: 0;
-  }
-
-  @media (min-width:#{lower-bound($large-range)}) {
-    width: $width-large;
-    padding-right: $padding-xx-large;
-  }
 }
+
+.c-intro__home--secondary {
+  color: $color-white;
+}
+
 
 .c-intro__people--title {
   font-size: $font-size-heading-small;

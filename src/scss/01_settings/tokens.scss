@@ -1,5 +1,6 @@
+// Borders
+$border-label: 2px solid;
 // Colors
-
 
 $color-primary: #07154C;
 $color-secondary: #AF2551;
@@ -74,6 +75,8 @@ $padding-x-large: 2rem;
 $padding-xx-large: 3rem;
 $padding-xxx-large: 4rem;
 $padding-xxxx-large: 5rem;
+$padding-xxxxx-large: 7rem;
+
 
 
 // Radius
@@ -98,6 +101,7 @@ $duration-slide: .25s;
 
 // width
 
+$width-medium: 500px;
 $width-large: 1000px;
 
 // Z-index

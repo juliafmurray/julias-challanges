@@ -1,8 +1,10 @@
-.c-main {
+.c-main,
+.c-main-services {
   flex-flow: column;
-  //border: 2px solid orange;
   padding: $padding-large;
+}
 
+.c-main {
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-flow: row;
     padding-top: $padding-xxxx-large;
@@ -10,22 +12,37 @@
 }
 
 .c-main__label {
-  font-weight: $font-weight-bold;
-  //border: 2px solid $color-secondary;
+  @include label-primary;
 }
 
 .c-main__title {
   color: $color-secondary;
-  font-weight: $font-weight-bold;
-  //border: 2px solid $color-secondary;
-}
-
-.c-button__subtitle {
-  background-color: $color-primary;
-  color: $color-white;
+  font-weight: $font-weight-regular;
 }
 
 .c-main__subtitle {
   padding-bottom: $padding-xx-large;
-  //border: 2px solid $color-green;
+}
+
+// services
+
+.c-main-services {
+  background-color: $color-green;
+  height: 400px;
+}
+
+.c-main__label--light {
+  @include label-secondary;
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: $width-medium;
+  }
+
+}
+
+.c-main__title--light {
+  color: $color-white;
+  //border: 2px solid blue;
+  justify-content: center;
+  font-weight: $font-weight-regular;
+  padding-bottom: $padding-large;
 }

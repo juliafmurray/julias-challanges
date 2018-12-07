@@ -1,0 +1,16 @@
+.o-stack {
+  display: flex;
+  flex-direction: column;
+  padding: $padding-x-large;
+  //border: 2px solid pink;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 500px;
+
+  }
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    width: 750px;
+    padding-left: $padding-xxxxx-large;
+  }
+}
