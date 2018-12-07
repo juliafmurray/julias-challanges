@@ -29,6 +29,7 @@
 .c-main-services {
   background-color: $color-green;
   height: 400px;
+  padding-left: $padding-xxxxx-large;
 }
 
 .c-main__label--light {
@@ -49,6 +50,22 @@
 
 //areas of Expertise
 
+.c-main__expertise {
+  background-color: $color-bg-accent;
+  border: 1px solid red;
+  height: 800px;
+  padding: $padding-xxxx-large $padding-small;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    padding-left: $padding-xx-large;
+  }
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    padding-left: $padding-xxxxx-large;
+    height: 500px;
+  }
+}
+
 .c-main__title--secondary {
   font-weight: $font-weight-bold;
   color: $color-primary;
@@ -58,7 +75,17 @@
 }
 
 .c-main__list {
-  padding: 0 $padding-xxx-large $padding-x-large 0;
+  padding-bottom: $padding-x-large;
   font-weight: $font-weight-medium;
   line-height: $line-height-tall;
+  //line-height: $line-height-text;
+  border: 2px solid blue;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    padding-right: $padding-large;
+  }
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    padding-right: $padding-xxx-large;
+  }
 }
