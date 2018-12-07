@@ -17,7 +17,7 @@
 
 .c-main__title {
   color: $color-secondary;
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-bold;
 }
 
 .c-main__subtitle {
@@ -45,4 +45,20 @@
   justify-content: center;
   font-weight: $font-weight-regular;
   padding-bottom: $padding-large;
+}
+
+//areas of Expertise
+
+.c-main__title--secondary {
+  font-weight: $font-weight-bold;
+  color: $color-primary;
+  //border: 2px solid blue;
+  padding-bottom: $padding-x-large;
+
+}
+
+.c-main__list {
+  padding: 0 $padding-xxx-large $padding-x-large 0;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-tall;
 }
