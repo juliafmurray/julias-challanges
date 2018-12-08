@@ -1,5 +1,8 @@
+// case study
+
 .c-main,
-.c-main-services {
+.c-main-services,
+.c-main-approach {
   flex-flow: column;
   padding: $padding-large;
 }
@@ -13,6 +16,7 @@
 
 .c-main__label {
   @include label-primary;
+  //border: 2px solid blue;
 }
 
 .c-main__title {
@@ -29,11 +33,12 @@
 .c-main-services {
   background-color: $color-green;
   height: 400px;
-  padding-left: $padding-xxxxx-large;
+  padding-left: $padding-xx-large;
 }
 
 .c-main__label--light {
   @include label-secondary;
+  color: $color-white;
   @media (min-width:#{lower-bound($medium-range)}) {
     width: $width-medium;
   }
@@ -88,4 +93,78 @@
   @media (min-width:#{lower-bound($large-range)}) {
     padding-right: $padding-xxx-large;
   }
+}
+
+// combo
+
+.c-main-combo {
+  background-color: $color-bg-accent;
+  padding: $padding-x-large 0;
+  flex-flow: column;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    flex-flow: row;
+  }
+}
+
+// approach
+
+.c-main-approach {
+  @media (min-width:#{lower-bound($medium-range)}) {
+    flex-flow: column;
+    width: 50%;
+  }
+}
+
+.c-main-approach__label {
+  font-weight: $font-weight-bold;
+  color: $color-secondary;
+  //border: 2px solid blue;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 50%;
+  }
+}
+
+.c-main-approach__title--fancy {
+  color: $color-green;
+  font-weight: $font-weight-x-bold;
+  font-style: italic;
+  //border: 2px solid blue;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 80%;
+  }
+
+
+}
+
+// people
+
+.c-main-people {
+  border: 2px solid green;
+  background-color: $color-green;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: $padding-small 0 $padding-small $padding-small;
+  height: 250px;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 40%;
+
+  }
+}
+
+.c-main-people__label {
+  font-weight: $font-weight-bold;
+  color: $color-white;
+}
+
+.c-main-people__title {
+  font-weight: $font-weight-bold;
+  font-style: italic;
+  color: $color-white;
+  flex-flow: row-reverse;
+  border: 2px solid purple;
+
 }

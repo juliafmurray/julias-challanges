@@ -9,13 +9,11 @@
     text-align: right;
     justify-content: flex-end;
     width: 25%;
-    //border: 2px solid purple;
     padding: $padding-xxx-large;
   }
 }
 
 .o-side__right-bottom {
-  //border: 1px solid green;
   flex-flow: column;
 
   @media (min-width:#{lower-bound($medium-range)}) {
