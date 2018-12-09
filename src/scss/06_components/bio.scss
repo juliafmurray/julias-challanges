@@ -1,0 +1,35 @@
+.c-bio {
+  background-color: $color-bg-primary;
+  border: 2px solid blue;
+  flex-direction: column;
+  z-index: -2;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    flex-direction: row;
+  }
+}
+
+
+.c-bio__image {
+  border: 2px solid pink;
+  background-color: $color-accent;
+  height: inherit;
+  width: 100%;
+  z-index: -1;
+  justify-content: flex-end;
+
+}
+
+.c-bio__close {
+  z-index: 1;
+  border: 2px solid blue;
+}
+
+.c-bio__blurb {
+  padding-top: $padding-large;
+}
+
+.c-bio__links {
+  background-color: $color-secondary;
+  height: 100px;
+}
