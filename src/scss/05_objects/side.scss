@@ -36,6 +36,7 @@
 }
 
 .o-side__left-top--reverse {
+
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 50%;
     order: 1;
@@ -47,7 +48,7 @@
   flex-direction: column;
   padding: $padding-large;
   @media (min-width:#{lower-bound($medium-range)}) {
-    padding: 0;
+    padding-top: $padding-xx-large;
     width: 50%;
     border: 1px solid red;
   }
