@@ -1,0 +1,221 @@
+// case study
+
+.c-main,
+.c-main-services,
+.c-main-approach,
+.c-main-people,
+.c-main-community {
+  flex-flow: column;
+  padding: $padding-large;
+}
+
+.c-main {
+  @media (min-width:#{lower-bound($medium-range)}) {
+    flex-flow: row;
+    padding-top: $padding-xxxx-large;
+  }
+}
+
+.c-main__label {
+  @include label-primary;
+  //border: 2px solid blue;
+}
+
+.c-main__title {
+  color: $color-secondary;
+  font-weight: $font-weight-bold;
+}
+
+.c-main__subtitle {
+  padding-bottom: $padding-xx-large;
+}
+
+// services
+
+.c-main-services {
+  background-color: $color-green;
+  height: 400px;
+  padding-left: $padding-xx-large;
+}
+
+.c-main__label--light {
+  @include label-secondary;
+  color: $color-white;
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: $width-medium;
+  }
+
+}
+
+.c-main__title--light {
+  color: $color-white;
+  //border: 2px solid blue;
+  justify-content: center;
+  font-weight: $font-weight-regular;
+  padding-bottom: $padding-large;
+}
+
+//areas of Expertise
+
+.c-main__expertise {
+  background-color: $color-bg-accent;
+  border: 1px solid red;
+  height: 800px;
+  padding: $padding-xxxx-large $padding-small;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    padding-left: $padding-xx-large;
+  }
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    padding-left: $padding-xxxxx-large;
+    height: 500px;
+  }
+}
+
+.c-main__title--secondary {
+  font-weight: $font-weight-bold;
+  color: $color-primary;
+  //border: 2px solid blue;
+  padding-bottom: $padding-x-large;
+
+}
+
+.c-main__list {
+  padding-bottom: $padding-x-large;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-tall;
+  //line-height: $line-height-text;
+  border: 2px solid blue;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    padding-right: $padding-large;
+  }
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    padding-right: $padding-xxx-large;
+  }
+}
+
+// combo
+
+.c-main-combo {
+  background-color: $color-bg-accent;
+  padding: $padding-x-large 0;
+  flex-flow: column;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    flex-flow: row;
+  }
+}
+
+// approach
+
+.c-main-approach {
+  @media (min-width:#{lower-bound($medium-range)}) {
+    flex-flow: column;
+    width: 50%;
+  }
+}
+
+.c-main-approach__label {
+  font-weight: $font-weight-bold;
+  color: $color-secondary;
+  //border: 2px solid blue;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 50%;
+  }
+}
+
+.c-main-approach__title--fancy {
+  color: $color-green;
+  font-weight: $font-weight-x-bold;
+  font-style: italic;
+  //border: 2px solid blue;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 80%;
+  }
+}
+
+// people
+.c-main-people {
+  border: 2px solid green;
+  background-color: $color-green;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: $padding-small 0 $padding-small $padding-small;
+  height: 300px;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 40%;
+  }
+}
+
+.c-main-people__label {
+  font-weight: $font-weight-bold;
+  color: $color-white;
+}
+
+.c-main-people__title {
+  font-weight: $font-weight-bold;
+  font-style: italic;
+  color: $color-white;
+  flex-flow: row-reverse;
+  border: 2px solid purple;
+}
+
+// Community
+
+.c-main-community__image {
+  background-color: $color-accent;
+  border: 2px solid green;
+  width: 100%;
+  height: 200px;
+}
+
+.c-main-community__title {
+  border: 2px solid green;
+}
+
+.c-main-community__subtitle {
+  font-weight: $font-weight-bold;
+}
+
+// Designers List
+
+
+.c-designers {
+  background-color: $color-bg-primary;
+  padding: $padding-x-large;
+  display: flex;
+  flex-flow: column;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    align-items: center;
+    flex-flow: row;
+  }
+}
+
+.c-designers__name {
+  color: $color-secondary;
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-x-bold;
+  line-height: $line-height-heading;
+  //border: 2px solid blue;
+  padding-right: $padding-large;
+}
+
+.c-designers__role {
+  color: $color-primary;
+  font-style: italic;
+  font-family: $font-family-primary;
+  line-height: $line-height-heading;
+  padding-top: $padding-small;
+}
+
+.c-designers__label {
+  padding: $padding-x-large 0 0 $padding-x-large;
+  font-weight: $font-weight-bold;
+}

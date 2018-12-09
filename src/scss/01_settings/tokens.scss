@@ -1,5 +1,6 @@
+// Borders
+$border-label: 2px solid;
 // Colors
-
 
 $color-primary: #07154C;
 $color-secondary: #AF2551;
@@ -26,7 +27,7 @@ $font-weight-x-bold: 900;
 $font-size-heading-xx-large: 5rem;
 $font-size-heading-x-large: 3.5rem;
 $font-size-heading-large: 2.9rem;
-$font-size-heading-medium: 2.4rem;
+$font-size-heading-medium: 2.25rem;
 $font-size-heading-small: 2rem;
 
 $font-size-text-large: 1.5rem;
@@ -35,8 +36,8 @@ $font-size-text-small: 1rem;
 
 // Line Height
 
-$line-height-heading: 1.25;
-$line-height-text: 1.25;
+$line-height-heading: 1;
+$line-height-text: 1.4;
 $line-height-tall: 1.75;
 
 // Kerning
@@ -73,6 +74,9 @@ $padding-large: 1.5rem;
 $padding-x-large: 2rem;
 $padding-xx-large: 3rem;
 $padding-xxx-large: 4rem;
+$padding-xxxx-large: 5rem;
+$padding-xxxxx-large: 6rem;
+
 
 
 // Radius
@@ -97,6 +101,8 @@ $duration-slide: .25s;
 
 // width
 
+$width-small: 200px;
+$width-medium: 500px;
 $width-large: 1000px;
 
 // Z-index

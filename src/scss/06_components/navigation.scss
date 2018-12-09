@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   height: 60px;
   justify-content: space-between;
-  padding-top: $padding-small;
+  padding: $padding-small $padding-medium 0 $padding-medium;
 }
 
 .c-nav__title {
@@ -18,7 +18,6 @@
 }
 
 .c-nav__link {
-  align-self: flex-start;
   display: none;
 
   @media (min-width:#{lower-bound($medium-range)}) {

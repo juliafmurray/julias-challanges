@@ -1,23 +1,29 @@
 .o-side {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    flex-direction: row; 
+  }
 }
 
 .o-side__left-top {
-  text-align: right;
-
+    border: 1px solid blue;
   @media (min-width:#{lower-bound($medium-range)}) {
+    text-align: right;
     justify-content: flex-end;
-    padding: $padding-xx-large $padding-medium;
     width: 25%;
+    padding: $padding-xxx-large;
   }
 }
 
 .o-side__right-bottom {
-  flex-direction: column;
-  padding: $padding-xx-large $padding-medium $padding-xx-large 0;
+  flex-flow: column;
+  border: 1px solid blue;
 
   @media (min-width:#{lower-bound($medium-range)}) {
-    width: 60%;
+    width: 70%;
+    padding: $padding-xxx-large $padding-medium $padding-small 0;
   }
 }
