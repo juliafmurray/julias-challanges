@@ -182,3 +182,40 @@
 .c-main-community__subtitle {
   font-weight: $font-weight-bold;
 }
+
+// Designers List
+
+
+.c-designers {
+  background-color: $color-bg-primary;
+  padding: $padding-x-large;
+  display: flex;
+  flex-flow: column;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    align-items: center;
+    flex-flow: row;
+  }
+}
+
+.c-designers__name {
+  color: $color-secondary;
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-x-bold;
+  line-height: $line-height-heading;
+  //border: 2px solid blue;
+  padding-right: $padding-large;
+}
+
+.c-designers__role {
+  color: $color-primary;
+  font-style: italic;
+  font-family: $font-family-primary;
+  line-height: $line-height-heading;
+  padding-top: $padding-small;
+}
+
+.c-designers__label {
+  padding: $padding-x-large 0 0 $padding-x-large;
+  font-weight: $font-weight-bold;
+}
