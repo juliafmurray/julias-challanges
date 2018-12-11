@@ -33,5 +33,33 @@
 
 .c-nav-small {
   background-color: $color-bg-accent;
+  display: flex;
   padding: $padding-large;
+  border: 2px solid blue;
+  flex-direction: column;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    display: none;
+  }
+}
+
+.c-nav-small__label {
+  border: 2px solid blue;
+  flex-direction: row;
+}
+.c-nav-small__label--default {
+  border: 2px solid blue;
+  width: 50%;
+}
+
+.c-nav-small__label--link {
+  border: 2px solid blue;
+  width: 50%;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.c-nav-small__list-item {
+  border: 2px solid blue;
+  line-height: $line-height-x-tall;
 }
