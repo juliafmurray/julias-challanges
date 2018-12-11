@@ -1,24 +1,25 @@
-.c-nav {
+.c-header {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   height: 60px;
   justify-content: space-between;
   border: 2px solid red;
-  //padding: $padding-small $padding-medium 0 $padding-medium;
+  padding: $padding-small $padding-medium 0 $padding-medium;
 }
 
-.c-nav__title {
-  //padding-left: $padding-small;
+.c-nav-header__menu {
+  justify-content: flex-end;
+  border: 1px solid red;
 }
 
-.c-nav__menu {
+.c-nav-header__menu {
   @media (min-width:#{lower-bound($medium-range)}) {
     display: none;
   }
 }
 
-.c-nav__link {
+.c-nav-header__list {
   display: none;
 
   @media (min-width:#{lower-bound($medium-range)}) {
@@ -26,8 +27,12 @@
   }
 }
 
-.c-nav__link--item {
-  //padding-right: $padding-medium;
+.c-nav-header__item {
+  padding-right: $padding-medium;
+}
+
+.c-logo-header__title {
+  padding-left: $padding-small;
 }
 
 //nav c-nav-small
