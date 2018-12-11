@@ -6,13 +6,14 @@
 .c-main-people,
 .c-main-community {
   flex-flow: column;
-  padding: $padding-large;
+  width: 100%;
+  //padding: $padding-large;
 }
 
 .c-main {
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-flow: row;
-    padding-top: $padding-xxxx-large;
+    //padding-top: $padding-xxxx-large;
   }
 }
 
@@ -27,7 +28,7 @@
 }
 
 .c-main__subtitle {
-  padding-bottom: $padding-xx-large;
+  //padding-bottom: $padding-xx-large;
 }
 
 // services
@@ -35,7 +36,7 @@
 .c-main-services {
   background-color: $color-green;
   height: 400px;
-  padding-left: $padding-xx-large;
+  //padding-left: $padding-xx-large;
 }
 
 .c-main__label--light {
@@ -49,10 +50,10 @@
 
 .c-main__title--light {
   color: $color-white;
-  //border: 2px solid blue;
+  border: 2px solid blue;
   justify-content: center;
   font-weight: $font-weight-regular;
-  padding-bottom: $padding-large;
+  //padding-bottom: $padding-large;
 }
 
 //areas of Expertise
@@ -61,14 +62,14 @@
   background-color: $color-bg-accent;
   border: 1px solid red;
   height: 800px;
-  padding: $padding-xxxx-large $padding-small;
+  //padding: $padding-xxxx-large $padding-small;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     padding-left: $padding-xx-large;
   }
 
   @media (min-width:#{lower-bound($large-range)}) {
-    padding-left: $padding-xxxxx-large;
+    //padding-left: $padding-xxxxx-large;
     height: 500px;
   }
 }
@@ -76,8 +77,8 @@
 .c-main__title--secondary {
   font-weight: $font-weight-bold;
   color: $color-primary;
-  //border: 2px solid blue;
-  padding-bottom: $padding-x-large;
+  border: 2px solid blue;
+  //padding-bottom: $padding-x-large;
 
 }
 
@@ -101,7 +102,7 @@
 
 .c-main-combo {
   background-color: $color-bg-accent;
-  padding: $padding-x-large 0;
+  //padding: $padding-x-large 0;
   flex-flow: column;
 
   @media (min-width:#{lower-bound($medium-range)}) {
@@ -145,7 +146,7 @@
   background-color: $color-green;
   flex-flow: column;
   justify-content: space-between;
-  padding: $padding-small 0 $padding-small $padding-small;
+  //padding: $padding-small 0 $padding-small $padding-small;
   height: 300px;
 
   @media (min-width:#{lower-bound($medium-range)}) {
@@ -188,7 +189,7 @@
 
 .c-designers {
   background-color: $color-bg-primary;
-  padding: $padding-x-large;
+  //padding: $padding-x-large;
   display: flex;
   flex-flow: column;
 
@@ -204,7 +205,7 @@
   font-weight: $font-weight-x-bold;
   line-height: $line-height-heading;
   //border: 2px solid blue;
-  padding-right: $padding-large;
+  //padding-right: $padding-large;
 }
 
 .c-designers__role {
@@ -212,10 +213,10 @@
   font-style: italic;
   font-family: $font-family-primary;
   line-height: $line-height-heading;
-  padding-top: $padding-small;
+  //padding-top: $padding-small;
 }
 
 .c-designers__label {
-  padding: $padding-x-large 0 0 $padding-x-large;
+  //padding: $padding-x-large 0 0 $padding-x-large;
   font-weight: $font-weight-bold;
 }

@@ -1,7 +1,7 @@
 .o-side {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  border: 1px solid red;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-direction: row;
@@ -13,7 +13,7 @@
   @media (min-width:#{lower-bound($medium-range)}) {
     text-align: right;
     width: 25%;
-    padding: $padding-xxx-large;
+    //padding: $padding-xxx-large;
   }
 }
 
@@ -24,7 +24,7 @@
 
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 70%;
-    padding: $padding-xxx-large $padding-medium $padding-small 0;
+    //padding: $padding-xxx-large $padding-medium $padding-small 0;
   }
 }
 
@@ -46,9 +46,9 @@
 
 .o-side__right-bottom--reverse {
   flex-direction: column;
-  padding: $padding-large;
+  //padding: $padding-large;
   @media (min-width:#{lower-bound($medium-range)}) {
-    padding-top: $padding-xx-large;
+    //padding-top: $padding-xx-large;
     width: 50%;
     border: 1px solid red;
   }
