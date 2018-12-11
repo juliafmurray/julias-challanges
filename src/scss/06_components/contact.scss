@@ -1,0 +1,22 @@
+.c-contact {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-bg-primary;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    flex-direction: row;
+  }
+}
+
+.c-contact__list {
+    padding: $padding-large;
+}
+
+.c-contact__item--label {
+  font-weight: $font-weight-bold;
+}
+
+.c-form__field,
+.c-form__area {
+    flex-direction: column;
+}
