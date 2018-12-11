@@ -2,15 +2,13 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  height: 60px;
   justify-content: space-between;
-  border: 2px solid red;
-  padding: $padding-small $padding-medium 0 $padding-medium;
+  padding: $padding-medium;
 }
 
-.c-nav-header__menu {
-  justify-content: flex-end;
-  border: 1px solid red;
+.c-logo-header__title {
+  padding-left: $padding-small;
+  padding-top: $padding-x-small;
 }
 
 .c-nav-header__menu {
@@ -27,13 +25,18 @@
   }
 }
 
-.c-nav-header__item {
+.c-nav-header__item,
+.c-nav-header__item--active {
   padding-right: $padding-medium;
 }
 
-.c-logo-header__title {
-  padding-left: $padding-small;
+.c-nav-header__item--active {
+  font-weight: $font-weight-bold;
+  color: $color-secondary;
+  text-decoration: underline;
 }
+
+
 
 //nav c-nav-small
 

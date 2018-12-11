@@ -39,7 +39,6 @@ h4 {
 }
 
 h5 {
-  color: $color-primary;
   font-family: $font-family-secondary;
   font-size: $font-size-text-large;
   font-weight: $font-weight-regular;
@@ -54,5 +53,5 @@ p {
 
 ul {
   list-style: none;
-  font-size: $font-size-text-medium;
+  //font-size: $font-size-text-medium;
 }
