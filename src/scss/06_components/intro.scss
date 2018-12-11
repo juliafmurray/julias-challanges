@@ -3,7 +3,9 @@
 .c-intro__people {
   flex-direction: column;
   height: 515px;
-  padding: $padding-large $padding-large;
+  width: 100%;
+  //padding: $padding-large $padding-large;
+  border: 2px solid blue;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-direction: row;
@@ -39,7 +41,7 @@
   letter-spacing: $spacing-xxx-small;
 
   @media (min-width:#{lower-bound($medium-range)}) {
-    padding-top: 0;
+    //padding-top: 0;
     font-size: $font-size-heading-medium;
   }
 

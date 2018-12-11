@@ -1,7 +1,7 @@
 
 .c-footer {
   display: flex;
-  padding: $padding-large;
+  //padding: $padding-large;
   border: 2px solid blue;
   justify-content: space-between;
   background-color: $color-primary;
@@ -19,7 +19,7 @@
   border: 2px solid blue;
   display: flex;
   flex-direction: column;
-  padding: $padding-large;
+  //padding: $padding-large;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     display: none;

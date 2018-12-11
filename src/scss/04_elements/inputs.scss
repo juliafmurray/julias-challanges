@@ -4,7 +4,7 @@
   color: $color-white;
   font-weight: $font-weight-bold;
   padding: $padding-medium;
-  margin-top: $spacing-x-large;
+  //margin-top: $spacing-x-large;
   border-radius: $border-radius-large;
   width: 250px;
   border: none;
@@ -14,4 +14,23 @@
   background-color: Transparent;
   height: 45px;
   border: none;
+}
+
+input[type="submit"],
+.c-button {
+  background-color: $color-primary;
+  border: $color-primary;
+  color: $color-white;
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-bold;
+  padding: $padding-small;
+  border-radius: $border-radius-large;
+}
+
+input[type=text], select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
