@@ -7,4 +7,11 @@
   margin-top: $spacing-x-large;
   border-radius: $border-radius-large;
   width: 250px;
+  border: none;
+}
+
+.c-button__close {
+  background-color: Transparent;
+  height: 45px;
+  border: none;
 }
