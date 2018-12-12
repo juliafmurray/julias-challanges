@@ -1,7 +1,6 @@
 .o-side {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-direction: row;
@@ -9,28 +8,34 @@
 }
 
 .o-side__left-top {
-    border: 1px solid green;
-  @media (min-width:#{lower-bound($medium-range)}) {
-    text-align: right;
-    width: 25%;
-    //padding: $padding-xxx-large;
+  //border: 1px solid blue;
+    @media (min-width:#{lower-bound($medium-range)}) {
+      width: 10%;
+    }
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    width: 30%;
+    padding: $padding-x-large;
+    justify-content: center;
   }
 }
 
 .o-side__right-bottom {
   flex-flow: column;
-  border: 1px solid blue;
-  padding: $padding-large;
+  //border: 1px solid blue;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 70%;
-    //padding: $padding-xxx-large $padding-medium $padding-small 0;
+  }
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    width: 50%;
   }
 }
 
 //bio
 .o-side--reverse {
-  border: 2px solid pink;
+  //border: 2px solid pink;
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +45,7 @@
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 50%;
     order: 1;
-    border: 1px solid green;
+    //border: 1px solid green;
   }
 }
 
@@ -50,6 +55,6 @@
   @media (min-width:#{lower-bound($medium-range)}) {
     //padding-top: $padding-xx-large;
     width: 50%;
-    border: 1px solid red;
+    //border: 1px solid red;
   }
 }
