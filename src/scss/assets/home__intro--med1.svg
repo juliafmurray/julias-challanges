@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="96px" viewBox="0 0 345 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="-8.21639664 64.0778807 233.904832 64.6936722 234.016794 108.625243 -8.10443454 108.009451"></polygon>
+    </defs>
+    <g id="illustrations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(-135.000000, -45.000000)">
+            <g id="Group-2" transform="translate(121.000000, -28.000000)">
+                <circle id="Oval" fill="#EFC138" cx="333.5" cy="98.5" r="25.5"></circle>
+                <g id="Path-2" transform="translate(137.815291, 123.776287) rotate(203.000000) translate(-137.815291, -123.776287) translate(24.815291, 37.276287)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFE0E0" transform="translate(112.900199, 86.351562) rotate(-34.000000) translate(-112.900199, -86.351562) " xlink:href="#path-1"></use>
+                    <polyline stroke="#AF2551" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="30.4080708 196 20 82.7158833 79.8023053 163.580645 67.0232034 41.1382907 170.9031 93.5561051 143.917321 -5 225 53.3548387"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
