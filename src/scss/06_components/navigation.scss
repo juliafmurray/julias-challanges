@@ -1,24 +1,23 @@
-.c-nav {
+.c-header {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  height: 60px;
   justify-content: space-between;
-  border: 2px solid red;
-  //padding: $padding-small $padding-medium 0 $padding-medium;
+  padding: $padding-medium;
 }
 
-.c-nav__title {
-  //padding-left: $padding-small;
+.c-logo-header__title {
+  padding-left: $padding-small;
+  padding-top: $padding-x-small;
 }
 
-.c-nav__menu {
+.c-nav-header__menu {
   @media (min-width:#{lower-bound($medium-range)}) {
     display: none;
   }
 }
 
-.c-nav__link {
+.c-nav-header__list {
   display: none;
 
   @media (min-width:#{lower-bound($medium-range)}) {
@@ -26,16 +25,24 @@
   }
 }
 
-.c-nav__link--item {
-  //padding-right: $padding-medium;
+.c-nav-header__item,
+.c-nav-header__item--active {
+  padding-right: $padding-medium;
+}
+
+.c-nav-header__item--active,
+.c-menu__item--active {
+  font-weight: $font-weight-bold;
+  color: $color-secondary;
+  text-decoration: underline;
 }
 
 //nav c-nav-small
 
-.c-nav-small {
+.c-menu {
   background-color: $color-bg-accent;
   display: flex;
-  //padding: $padding-large;
+  padding: $padding-large;
   border: 2px solid blue;
   flex-direction: column;
 
@@ -44,23 +51,22 @@
   }
 }
 
-.c-nav-small__label {
-  border: 2px solid blue;
-  flex-direction: row;
-}
-.c-nav-small__label--default {
-  border: 2px solid blue;
+.c-menu__title {
+  //border: 2px solid blue;
   width: 50%;
+  font-weight: $font-weight-bold;
 }
 
-.c-nav-small__label--link {
-  border: 2px solid blue;
+.c-menu__anchor {
+  //border: 2px solid red;
   width: 50%;
-  justify-content: space-between;
   text-align: right;
+  justify-content: flex-end;
 }
 
-.c-nav-small__list-item {
-  border: 2px solid blue;
+.c-menu__item,
+.c-menu__item--active {
+  //border: 2px solid blue;
+
   line-height: $line-height-x-tall;
 }
