@@ -1,11 +1,9 @@
-
 html {
   font-family: $font-family-secondary;
   line-height: $line-height-text;
 }
 
 h1 {
-  color: $color-accent;
   font-family: $font-family-primary;
   font-size: $font-size-heading-large;
   font-weight: $font-weight-bold;
@@ -41,7 +39,6 @@ h5 {
   font-family: $font-family-secondary;
   font-size: $font-size-text-large;
   font-weight: $font-weight-regular;
-  line-height: $line-height-tall;
 }
 
 p {
