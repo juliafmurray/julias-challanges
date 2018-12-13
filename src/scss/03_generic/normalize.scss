@@ -126,6 +126,8 @@ audio:not([controls]) {
 
 img {
   border-style: none;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 svg:not(:root) {

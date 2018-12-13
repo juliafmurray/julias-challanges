@@ -1,7 +1,6 @@
 .o-side {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-direction: row;
@@ -9,23 +8,17 @@
 }
 
 .o-side__left-top {
-    border: 1px solid green;
-    //width: 100%;
   @media (min-width:#{lower-bound($medium-range)}) {
     text-align: right;
     width: 25%;
-    //padding: $padding-xxx-large;
   }
 }
 
 .o-side__right-bottom {
   flex-flow: column;
-  border: 1px solid blue;
-  padding: $padding-large;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 70%;
-    //padding: $padding-xxx-large $padding-medium $padding-small 0;
   }
 }
 
