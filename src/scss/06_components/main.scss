@@ -1,21 +1,25 @@
 .c-card,
-.c-card--community,
+.c-card--fancy,
 .c-card--list {
   flex-flow: column;
   padding: $padding-xx-large $padding-large;
 
   @media (min-width:#{lower-bound($large-range)}) {
     flex-flow: row;
+    padding: $padding-xx-large $padding-large $padding-xx-large $padding-xxxxx-large;
   }
 }
 
 .c-card-row {
   flex-flow: column;
-  padding: $padding-large;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-flow: row;
   }
+}
+
+.c-card__border {
+  border-bottom: $border;
 }
 
 .c-card--list {
@@ -37,8 +41,8 @@
 }
 
 .c-card--fancy {
+  background-color: $color-accent;
   flex-direction: column;
-  padding-bottom: $padding-large;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 50%;
@@ -47,23 +51,21 @@
 
 .c-card__title--fancy {
   color: $color-green;
-  font-weight: $font-weight-x-bold;
   font-style: italic;
+  font-weight: $font-weight-x-bold;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 80%;
   }
-
 }
 
 .c-card--spotlight {
+  @include img;
+  background-image: url('../assets/spotlight.jpg');
   flex-direction: column;
   height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
   justify-content: space-between;
   padding: $padding-small 0 $padding-small $padding-small;
-  background-image: url('../assets/spotlight.jpg');
 
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 50%;
@@ -72,23 +74,14 @@
 }
 
 .c-card__label--spotlight {
-  font-weight: $font-weight-bold;
   color: $color-white;
+  font-weight: $font-weight-bold;
 }
 
 .c-card__title--spotlight {
-  font-weight: $font-weight-bold;
-  font-style: italic;
   color: $color-white;
-}
-
-.c-card__image--community {
-  height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: space-between;
-  padding: $padding-small 0 $padding-small $padding-small;
-  background-image: url('../assets/spotlight.jpg');
+  font-style: italic;
+  font-weight: $font-weight-bold;
 }
 
 .c-card--services {
@@ -97,8 +90,8 @@
 }
 
 .c-card__title--accent {
-  font-weight: $font-weight-regular;
   color: $color-secondary;
+  font-weight: $font-weight-regular;
 }
 
 .c-card--alt {
@@ -116,8 +109,8 @@
 }
 
 .c-card__title--secondary {
-  font-weight: $font-weight-bold;
   color: $color-primary;
+  font-weight: $font-weight-bold;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 85%;
@@ -129,8 +122,8 @@
 }
 
 .c-card__list {
-  padding-bottom: $padding-x-large;
   font-weight: $font-weight-medium;
+  padding-bottom: $padding-x-large;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     padding-right: $padding-large;
@@ -145,13 +138,11 @@
   font-size: $font-size-text-medium;
 }
 
-// Designers List
-
 .c-designers {
   background-color: $color-bg-primary;
-  padding: $padding-large;
   display: flex;
   flex-flow: column;
+  padding: $padding-x-large;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     align-items: center;
@@ -163,16 +154,17 @@
   color: $color-secondary;
   font-family: $font-family-secondary;
   font-weight: $font-weight-x-bold;
-  line-height: $line-height-heading;
-  //border: 2px solid blue;
   padding-right: $padding-large;
 }
 
 .c-designers__subtitle {
   color: $color-primary;
-  font-style: italic;
   font-family: $font-family-primary;
-  line-height: $line-height-heading;
+  font-style: italic;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    padding-top: $padding-medium;
+  }
 }
 
 .c-designers__label {

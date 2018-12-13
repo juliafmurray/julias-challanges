@@ -1,32 +1,28 @@
 .c-contact {
+  background-color: $color-bg-secondary;
   display: flex;
   flex-direction: column;
-  background-color: $color-bg-secondary;
+  padding: $padding-large;
 
   @media (min-width:#{lower-bound($large-range)}) {
     flex-direction: row;
   }
 }
 
-.c-contact__list {
-    //padding: $padding-large;
-
-}
-
 .c-contact__item--label {
   font-weight: $font-weight-bold;
 }
 
-.c-form {
-    order: -1;
-}
-
 .c-form__field,
 .c-form__area {
-    flex-direction: column;
+  flex-direction: column;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    width: 70%;
+  }
 }
 
 .c-form__title {
   color: $color-secondary;
-  //padding-bottom: $padding-x-large;
+  padding: $padding-x-large 0;
 }

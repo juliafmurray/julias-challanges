@@ -16,34 +16,31 @@
 
 .o-side__right-bottom {
   flex-flow: column;
-;
+
   @media (min-width:#{lower-bound($medium-range)}) {
     width: 80%;
   }
 }
 
-//bio
-.o-side--reverse {
-  border: 2px solid pink;
+.o-side--equal {
   display: flex;
   flex-direction: column;
 }
 
-.o-side__left-top--reverse {
-
-  @media (min-width:#{lower-bound($medium-range)}) {
+.o-side__left-top--equal {
+  @media (min-width:#{lower-bound($large-range)}) {
     width: 50%;
-    order: 1;
-    border: 1px solid green;
+
   }
 }
 
-.o-side__right-bottom--reverse {
+.o-side__right-bottom--equal {
   flex-direction: column;
-  //padding: $padding-large;
-  @media (min-width:#{lower-bound($medium-range)}) {
-    //padding-top: $padding-xx-large;
+  padding: $padding-large;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    order: -1;
+    padding-top: $padding-xx-large;
     width: 50%;
-    border: 1px solid red;
   }
 }
