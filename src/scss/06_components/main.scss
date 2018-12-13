@@ -1,36 +1,97 @@
 // case study
 
-.c-main,
-.c-main-services,
-.c-main-approach,
-.c-main-people,
-.c-main-community {
+.c-card {
   flex-flow: column;
-  width: 100%;
-  //padding: $padding-large;
-}
-
-.c-main {
-  @media (min-width:#{lower-bound($medium-range)}) {
+  padding: $padding-large;
+  @media (min-width:#{lower-bound($large-range)}) {
     flex-flow: row;
-    //padding-top: $padding-xxxx-large;
   }
 }
 
-.c-main__label {
+.c-card-row {
+  flex-flow: column;
+  padding: $padding-large;
 
-  //border: 2px solid blue;
+  @media (min-width:#{lower-bound($medium-range)}) {
+    flex-flow: row;
+  }
 }
 
-.c-main__title {
+
+.c-card__label {
+  border: 2px solid blue;
+}
+
+.c-card__title {
   color: $color-secondary;
   font-weight: $font-weight-bold;
+  padding-right: $padding-large;
 }
 
-.c-main__subtitle {
-  //padding-bottom: $padding-xx-large;
+// approach
+
+.c-card--fancy {
+  flex-direction: column;
+  padding-bottom: $padding-large;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 50%;
+  }
 }
 
+.c-card__title--fancy {
+  color: $color-green;
+  font-weight: $font-weight-x-bold;
+  font-style: italic;
+  //border: 2px solid blue;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 80%;
+  }
+
+}
+
+// people
+.c-card--spotlight {
+  border: 2px solid green;
+  flex-direction: column;
+  background-size: cover;
+  height: 300px;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  padding: $padding-small 0 $padding-small $padding-small;
+  background-image: url('../assets/spotlight.jpg');
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 50%;
+    flex-direction: column;
+  }
+}
+
+.c-card__label--spotlight {
+  font-weight: $font-weight-bold;
+  color: $color-white;
+}
+
+.c-card__title--spotlight {
+  font-weight: $font-weight-bold;
+  font-style: italic;
+  color: $color-white;
+
+  border: 2px solid purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+//OLD STUFF
 // services
 
 .c-main-services {
@@ -45,7 +106,6 @@
   @media (min-width:#{lower-bound($medium-range)}) {
     width: $width-medium;
   }
-
 }
 
 .c-main__title--light {
@@ -98,74 +158,7 @@
   }
 }
 
-// combo
 
-.c-main-combo {
-  background-color: $color-bg-accent;
-  //padding: $padding-x-large 0;
-  flex-flow: column;
-
-  @media (min-width:#{lower-bound($medium-range)}) {
-    flex-flow: row;
-  }
-}
-
-// approach
-
-.c-main-approach {
-  @media (min-width:#{lower-bound($medium-range)}) {
-    flex-flow: column;
-    width: 50%;
-  }
-}
-
-.c-main-approach__label {
-  font-weight: $font-weight-bold;
-  color: $color-secondary;
-  //border: 2px solid blue;
-
-  @media (min-width:#{lower-bound($medium-range)}) {
-    width: 50%;
-  }
-}
-
-.c-main-approach__title--fancy {
-  color: $color-green;
-  font-weight: $font-weight-x-bold;
-  font-style: italic;
-  //border: 2px solid blue;
-
-  @media (min-width:#{lower-bound($medium-range)}) {
-    width: 80%;
-  }
-}
-
-// people
-.c-main-people {
-  border: 2px solid green;
-  background-color: $color-green;
-  flex-flow: column;
-  justify-content: space-between;
-  //padding: $padding-small 0 $padding-small $padding-small;
-  height: 300px;
-
-  @media (min-width:#{lower-bound($medium-range)}) {
-    width: 40%;
-  }
-}
-
-.c-main-people__label {
-  font-weight: $font-weight-bold;
-  color: $color-white;
-}
-
-.c-main-people__title {
-  font-weight: $font-weight-bold;
-  font-style: italic;
-  color: $color-white;
-  flex-flow: row-reverse;
-  border: 2px solid purple;
-}
 
 // Community
 
@@ -205,7 +198,7 @@
   font-weight: $font-weight-x-bold;
   line-height: $line-height-heading;
   //border: 2px solid blue;
-  //padding-right: $padding-large;
+  padding-right: $padding-large;
 }
 
 .c-designers__role {
