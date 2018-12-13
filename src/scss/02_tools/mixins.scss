@@ -1,1 +1,10 @@
+@mixin img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
 
+  @media (min-width:#{lower-bound($medium-range)}) {
+    height: 500px;
+  }
+}

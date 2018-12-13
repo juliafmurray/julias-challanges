@@ -37,13 +37,10 @@
   text-decoration: underline;
 }
 
-//nav c-nav-small
-
 .c-menu {
   background-color: $color-bg-accent;
   display: flex;
   padding: $padding-large;
-  border: 2px solid blue;
   flex-direction: column;
 
   @media (min-width:#{lower-bound($medium-range)}) {
@@ -52,13 +49,11 @@
 }
 
 .c-menu__title {
-  //border: 2px solid blue;
   width: 50%;
   font-weight: $font-weight-bold;
 }
 
 .c-menu__anchor {
-  //border: 2px solid red;
   width: 50%;
   text-align: right;
   justify-content: flex-end;
@@ -66,7 +61,5 @@
 
 .c-menu__item,
 .c-menu__item--active {
-  //border: 2px solid blue;
-
   line-height: $line-height-x-tall;
 }

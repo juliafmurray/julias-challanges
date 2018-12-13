@@ -1,24 +1,64 @@
 .c-bio {
   background-color: $color-bg-primary;
-  border: 2px solid blue;
   flex-direction: column;
 
-  @media (min-width:#{lower-bound($medium-range)}) {
+  @media (min-width:#{lower-bound($large-range)}) {
     flex-direction: row;
   }
 }
 
-
-.c-bio__image {
-  border: 2px solid pink;
-  background-color: $color-accent;
-  height: inherit;
-  width: 100%;
+.c-bio__image--alexa,
+.c-bio__image--noah,
+.c-bio__image--nadia,
+.c-bio__image--kevin,
+.c-bio__image--kelly,
+.c-bio__image--julia,
+.c-bio__image--gina,
+.c-bio__image--eva,
+.c-bio__image--chris {
+  @include img;
   justify-content: flex-end;
 }
 
+.c-bio__image--alexa {
+  background-image: url('https://8thlight.com/images/team/alexa-albanese-e424bdbc.jpg');
+}
+
+.c-bio__image--noah {
+  background-image: url('https://8thlight.com/images/team/noah-rogers-f29268d7.jpg');
+}
+
+.c-bio__image--nadia {
+  background-image: url('https://8thlight.com/images/team/nadia-doutcheva-aefd8371.jpg');
+}
+
+.c-bio__image--kevin {
+  background-image: url('https://8thlight.com/images/team/kevin-zolkiewicz-3e8e766f.jpg');
+}
+
+.c-bio__image--kelly {
+  background-image: url('https://8thlight.com/images/team/kelly-rauwerdink-fb4e7728.jpg');
+}
+
+.c-bio__image--julia {
+  background-image: url('https://8thlight.com/images/team/julia-murray-1d95e5fb.jpg');
+}
+
+.c-bio__image--gina {
+  background-image: url('https://8thlight.com/images/team/gina-valdez-e3f7c27d.jpg');
+}
+
+.c-bio__image--eva {
+  background-image: url('https://8thlight.com/images/team/eva-penzeymoog-aeaa3f88.jpg');
+}
+
+.c-bio__image--chris {
+  background-image: url('https://8thlight.com/images/team/chris-peak-1156785b.jpg');
+}
+
+
 .c-bio__blurb {
-  //padding-top: $padding-large;
+  padding: $padding-medium 0;
 }
 
 .c-bio__links {

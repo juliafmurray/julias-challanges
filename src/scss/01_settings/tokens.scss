@@ -1,6 +1,4 @@
-// Borders
-$border-label: 2px solid;
-// Colors
+$border: 2px solid;
 
 $color-primary: #07154C;
 $color-secondary: #AF2551;
@@ -13,8 +11,6 @@ $color-green: #185D58;
 $color-border: #07154C;
 $color-blue: #28A8DF;
 
-// Fonts
-
 $font-family-primary: 'bookmania', serif;
 $font-family-secondary: 'work-sans', sans-serif;
 $font-family-monospace: monospace;
@@ -22,8 +18,6 @@ $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-weight-x-bold: 900;
-
-// Font Size
 
 $font-size-heading-xx-large: 5rem;
 $font-size-heading-x-large: 3.5rem;
@@ -35,20 +29,13 @@ $font-size-text-large: 1.5rem;
 $font-size-text-medium: 1.3rem;
 $font-size-text-small: 1rem;
 
-// Line Height
-
 $line-height-heading: 1.25;
 $line-height-text: 1.5;
 $line-height-tall: 1.75;
 $line-height-x-tall: 2.5;
 
-
-// Kerning
-
 $letter-spacing-narrow: -10px;
 $letter-spacing-wide: 3px;
-
-// Spacing
 
 $spacing-x-small: .5rem;
 $spacing-xx-small: .25rem;
@@ -60,16 +47,10 @@ $spacing-x-large: 2rem;
 $spacing-xx-large: 3rem;
 $spacing-xxx-large: 4rem;
 
-// Borders
-
 $border-width-thin: 1px;
 $border-width-thick: 2px;
 
-// Positioning
-
 $positioning-centered: 0 auto;
-
-// padding
 
 $padding-x-small: .25rem;
 $padding-small: .5rem;

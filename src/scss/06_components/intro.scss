@@ -7,6 +7,7 @@
 
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-direction: row;
+      padding: $padding-xx-large 0 $padding-xx-large ;
   }
 }
 
@@ -14,10 +15,6 @@
 .c-intro-approach__title,
 .c-intro-people__title {
   padding-right: $padding-xxx-large;
-
-  @media (min-width:#{lower-bound($medium-range)}) {
-    padding: $padding-large 0;
-  }
 }
 
 .c-intro-approach__title,
@@ -35,6 +32,10 @@
 
 .c-intro-home__title {
   color: $color-blue;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    padding-left: $padding-xxxxx-large;
+  }
 }
 
 .c-intro-home__title--accent {
@@ -44,6 +45,10 @@
 .c-intro-home__title--subtitle {
   font-weight: $font-weight-bold;
   line-height: $line-height-text;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    padding-left: $padding-xxxxx-large;
+  }
 }
 
 // home illustrations
@@ -71,8 +76,11 @@
   @media (min-width:#{lower-bound($large-range)}) {
     display: flex;
     justify-content: center;
+    padding-left: $padding-x-large;
   }
 }
+
+
 
 //people
 
@@ -90,4 +98,16 @@
 
 .c-intro-approach {
   background-color: $color-green;
+}
+
+.c-intro-approach--alt {
+  background-color: $color-accent;
+
+  @media (min-width:#{lower-bound($medium-range)}) {
+    padding: $padding-xx-large 0;
+  }
+}
+
+.c-intro-approach__label--alt {
+  color: $color-primary
 }
