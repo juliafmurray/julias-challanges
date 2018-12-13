@@ -1,5 +1,6 @@
 .c-card,
-.c-card--community {
+.c-card--community,
+.c-card--list {
   flex-flow: column;
   padding: $padding-xx-large $padding-large;
   @media (min-width:#{lower-bound($large-range)}) {
@@ -14,6 +15,18 @@
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-flow: row;
   }
+}
+
+.c-card--list {
+  padding-right: $padding-xxx-large;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    padding-right: $padding-xxxxx-large;
+  }
+}
+
+.c-card__paragraph {
+  padding-bottom: $padding-large;
 }
 
 .c-card__title {
@@ -90,26 +103,15 @@
 //OLD STUFF
 // services
 
-.c-main-services {
-  background-color: $color-green;
+.c-card--services {
+  background-color: $color-bg-accent;
   height: 400px;
   //padding-left: $padding-xx-large;
 }
 
-.c-main__label--light {
-
-  color: $color-white;
-  @media (min-width:#{lower-bound($medium-range)}) {
-    width: $width-medium;
-  }
-}
-
-.c-main__title--light {
-  color: $color-white;
-  border: 2px solid blue;
-  justify-content: center;
+.c-card__title--accent {
   font-weight: $font-weight-regular;
-  //padding-bottom: $padding-large;
+  color: $color-secondary;
 }
 
 //areas of Expertise
