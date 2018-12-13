@@ -16,9 +16,9 @@
 
 .o-side__right-bottom {
   flex-flow: column;
-
+;
   @media (min-width:#{lower-bound($medium-range)}) {
-    width: 70%;
+    width: 80%;
   }
 }
 

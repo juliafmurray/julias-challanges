@@ -1,12 +1,15 @@
 .o-stack {
   display: flex;
   flex-direction: column;
-  border: 2px solid purple;
+  padding: $padding-x-large;
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    padding: $padding-xx-large;
+  }
 }
 
 .o-stack__third {
   flex-flow: column;
-  border: 2px solid pink;
 
   @media (min-width:#{lower-bound($large-range)}) {
     flex-flow: row;

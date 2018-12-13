@@ -3,6 +3,7 @@
 .c-card--list {
   flex-flow: column;
   padding: $padding-xx-large $padding-large;
+
   @media (min-width:#{lower-bound($large-range)}) {
     flex-flow: row;
   }
@@ -90,23 +91,9 @@
   background-image: url('../assets/spotlight.jpg');
 }
 
-
-
-
-
-
-
-
-
-
-
-//OLD STUFF
-// services
-
 .c-card--services {
   background-color: $color-bg-accent;
   height: 400px;
-  //padding-left: $padding-xx-large;
 }
 
 .c-card__title--accent {
@@ -114,38 +101,36 @@
   color: $color-secondary;
 }
 
-//areas of Expertise
-
-.c-main__expertise {
-  background-color: $color-bg-accent;
-  border: 1px solid red;
+.c-card--alt {
+  background-color: $color-bg-primary;
   height: 800px;
-  //padding: $padding-xxxx-large $padding-small;
+
 
   @media (min-width:#{lower-bound($medium-range)}) {
     padding-left: $padding-xx-large;
   }
 
   @media (min-width:#{lower-bound($large-range)}) {
-    //padding-left: $padding-xxxxx-large;
     height: 500px;
   }
 }
 
-.c-main__title--secondary {
+.c-card__title--secondary {
   font-weight: $font-weight-bold;
   color: $color-primary;
-  border: 2px solid blue;
-  //padding-bottom: $padding-x-large;
 
+  @media (min-width:#{lower-bound($medium-range)}) {
+    width: 85%;
+  }
+
+  @media (min-width:#{lower-bound($large-range)}) {
+    width: 70%;
+  }
 }
 
-.c-main__list {
+.c-card__list {
   padding-bottom: $padding-x-large;
   font-weight: $font-weight-medium;
-  line-height: $line-height-tall;
-  //line-height: $line-height-text;
-  border: 2px solid blue;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     padding-right: $padding-large;
@@ -156,12 +141,15 @@
   }
 }
 
-// Designers List
+.c-card__item {
+  font-size: $font-size-text-medium;
+}
 
+// Designers List
 
 .c-designers {
   background-color: $color-bg-primary;
-  //padding: $padding-x-large;
+  padding: $padding-large;
   display: flex;
   flex-flow: column;
 
@@ -171,7 +159,7 @@
   }
 }
 
-.c-designers__name {
+.c-designers__title {
   color: $color-secondary;
   font-family: $font-family-secondary;
   font-weight: $font-weight-x-bold;
@@ -180,15 +168,13 @@
   padding-right: $padding-large;
 }
 
-.c-designers__role {
+.c-designers__subtitle {
   color: $color-primary;
   font-style: italic;
   font-family: $font-family-primary;
   line-height: $line-height-heading;
-  //padding-top: $padding-small;
 }
 
 .c-designers__label {
-  //padding: $padding-x-large 0 0 $padding-x-large;
   font-weight: $font-weight-bold;
 }
