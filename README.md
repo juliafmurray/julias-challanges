@@ -1,4 +1,4 @@
-# Julia Murrays Challenges
+# Julia Murray's Challenges
 
 This repo contains the code for Julia Murrays design apprenticeship challenges. It was building using the Apprentice eb-Starter Kit found here: https://github.com/8thlight/apprentice-web-starter-kit
 
