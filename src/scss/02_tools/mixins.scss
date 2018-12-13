@@ -1,15 +1,1 @@
-@mixin label-primary {
-  border-top: $border-label;
-  padding: 0 $padding-xxx-large $padding-x-large 0;
-  font-weight: $font-weight-bold;
 
-  @media (min-width:#{lower-bound($medium-range)}) {
-    padding: 0 0 0 $padding-xxx-large;
-  }
-}
-
-@mixin label-secondary {
-  border-top: $border-label;
-  padding: 0 $padding-xxx-large $padding-x-large 0;
-  font-weight: $font-weight-bold;
-}

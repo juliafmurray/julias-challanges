@@ -1,82 +1,61 @@
-.c-intro--home,
-.c-intro__approach,
-.c-intro__people {
+.c-intro-home,
+.c-intro-approach,
+.c-intro-people {
   flex-direction: column;
-  width: 100%;
   padding: $padding-xx-large 0 $padding-xx-large $padding-large;
+  width: 100%;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     flex-direction: row;
   }
 }
 
-.c-intro--home {
-  background-color: $color-primary;
-}
-
-.c-intro__people {
-  background-color: $color-green;
-}
-
-.c-intro__approach {
-  background-color: $color-secondary;
-}
-
-
-.c-intro__approach--label,
-.c-intro__people--label {
-  @include label-primary;
-  color: $color-white;
-}
-
-.c-intro__title--main {
-  color: $color-blue;
+.c-intro-home__title,
+.c-intro-approach__title,
+.c-intro-people__title {
   padding-right: $padding-xxx-large;
 
   @media (min-width:#{lower-bound($medium-range)}) {
     padding: $padding-large 0;
   }
-
-  @media (min-width:#{lower-bound($large-range)}) {
-  }
 }
 
-
-.c-intro__title--accent {
+.c-intro-approach__title,
+.c-intro-approach__label,
+.c-intro-home__title--accent,
+.c-intro-home__title--subtitle {
   color: $color-white;
+}
+
+//home
+
+.c-intro-home {
+  background-color: $color-primary;
+}
+
+.c-intro-home__title {
+  color: $color-blue;
+}
+
+.c-intro-home__title--accent {
   font-weight: $font-weight-regular;
 }
 
-.c-intro__title--subtitle {
-  color: $color-white;
+.c-intro-home__title--subtitle {
   font-weight: $font-weight-bold;
-  line-height: $line-height-heading;
+  line-height: $line-height-text;
 }
 
-
-.c-intro__people--title {
-  font-size: $font-size-heading-small;
-  letter-spacing: $spacing-xxx-small;
-
-  @media (min-width:#{lower-bound($medium-range)}) {
-    //padding-top: 0;
-    font-size: $font-size-heading-medium;
-  }
-
-  @media (min-width:#{lower-bound($large-range)}) {
-    font-size: $font-size-heading-large;
-  }
-}
+// home illustrations
 
 .c-intro-home__smimg {
-  //border: 2px solid pink;
   padding-bottom: $padding-medium;
   @media (min-width:#{lower-bound($medium-range)}) {
     display: none;
   }
 }
 
-.c-intro-home__medimg1 {
+.c-intro-home__medimg {
   display: none;
   @media (min-width:#{lower-bound($medium-range)}) {
     display: flex;
@@ -91,7 +70,24 @@
   display: none;
   @media (min-width:#{lower-bound($large-range)}) {
     display: flex;
-    //border: 2px solid pink;
     justify-content: center;
   }
+}
+
+//people
+
+.c-intro-people {
+  background-color: $color-bg-accent;
+}
+
+.c-intro-people__title {
+  color: $color-green;
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-medium;
+}
+
+//approach
+
+.c-intro-approach {
+  background-color: $color-green;
 }
